@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --primary-color: #E25D00;
+    --secondary-color: #DD9200;
+    --tertiary-color: #000000;
+}
+
+/* Navigation Section */
+
+body.home-page {
+    font-family: 'Open Sans', sans-serif;
+
+   /*  background-image: url(../assets/background-image-1.jpg); */
+
+    animation: transitionIn 1.50s; 
+}
+
+.logo-1 {
+    width: 20rem;
+}
+
+.apply-btn {
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+    border-radius: 10px;
+    height: 3rem;
+}
+
+
+/* Hero Section (Left Section) */ 
+
+.main-text {
+    position: relative;
+    color: #000;
+    width: 31.3125rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Archivo', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 3rem;
+}
+
+.apply-membership-btn {
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+}
+
+.contact-us-btn {
+    background-color: var(--tertiary-color);
+    border: var(--tertiary-color)
+}
+
+.sub-text {
+    font-size: 0.8rem;
+}
+
+
+/* Hero Section (Right Section) */
+
+.img-fluid {
+    width: 80%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {    
+    .main-text {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .sub-text {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    .button-group {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Key Frames */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+
+*/ 
